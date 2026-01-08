@@ -1,0 +1,199 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Jatin} \\ \vspace{1pt}
+    \small +91-8377912277 $|$ \href{mailto:jatin.sdev@gmail.com}{\underline{jatin.sdev@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/jatin-sdev}{\underline{linkedin.com/in/jatin-sdev}} $|$
+    \href{https://github.com/jatin-sdev}{\underline{github.com/jatin-sdev}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Dronacharya College of Engineering}{Gurugram, Haryana}
+      {Bachelor of Technology in Computer Science and IT; CGPA: 7.7}{2022 -- 2026}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {WysBryx Technologies}{Remote}
+      {Full Stack Developer Intern}{Nov. 2025 -- Present}
+      \resumeItemListStart
+        \resumeItem{Architected and deployed \textbf{Synergy}, an internal ERP system using \textbf{MERN Stack} and \textbf{TypeScript}, streamlining resource management for \textbf{50+ internal users}.}
+        \resumeItem{Engineered a reusable \textbf{Tiptap} rich-text editor with local state caching, reducing editor initialization latency by \textbf{30\%} and improving content creation efficiency.}
+        \resumeItem{Secured sensitive HR data by implementing \textbf{RBAC (Role-Based Access Control)} via \textbf{JWT} middleware, managing granular permissions for \textbf{4 distinct user roles}.}
+        \resumeItem{Automated weekly engineering reporting by designing scheduled cron jobs, reducing manual status update time by \textbf{40\%} for the development team.}
+        \resumeItem{Standardized API consumption by documenting \textbf{40+ RESTful endpoints} using \textbf{Swagger/Scalar}, ensuring seamless integration for frontend developers.}
+      \resumeItemListEnd
+      
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+      
+
+      \resumeSubheading
+        {Video Streaming Architecture $|$ \textnormal{\emph{\href{https://github.com/jatin-sdev/vidtube}{\underline{Repository}}}}}{}
+        {Node.js, Express, MongoDB, Cloudinary, Bcrypt, JWT, Multer}{}
+          \resumeItemListStart
+            \resumeItem{Developed a high-performance backend handling complex data relationships using \textbf{MongoDB Aggregation Pipelines}, optimizing query execution time for video feeds.}
+            \resumeItem{Implemented secure authentication utilizing \textbf{JWT} and \textbf{HttpOnly cookies} to prevent XSS attacks and manage user sessions effectively.}
+            \resumeItem{Integrated \textbf{Cloudinary} for optimized video storage and retrieval, ensuring low-latency media delivery across varying bandwidths.}
+          \resumeItemListEnd
+
+      \resumeSubheading
+        {E-Commerce Web Platform $|$ \textnormal{\emph{\href{https://github.com/jatin-sdev/mern-ecommerce-main}{\underline{Repository}}}}}{}
+        {React, Redux Toolkit, Node.js, Stripe, Nodemailer, MongoDB}{}
+          \resumeItemListStart
+            \resumeItem{Built a feature-rich shopping platform using \textbf{Redux Toolkit} for global state management of carts and user profiles, reducing unnecessary re-renders.}
+            \resumeItem{Integrated \textbf{Stripe API} to process secure transactions and implemented \textbf{Nodemailer} for automated OTP verification and order notifications.}
+            \resumeItem{Designed a dynamic admin dashboard for real-time inventory management, supporting complex CRUD operations for product listings.}
+          \resumeItemListEnd
+
+      \resumeSubheading
+        {MindMatters - AI Mental Health Companion $|$ \textnormal{\emph{\href{https://github.com/jatin-sdev/MindMatters}{\underline{Repository}}}}}{}
+        {Next.js 15, TypeScript, PostgreSQL, Drizzle ORM, TailwindCSS, Hugging Face API}{}
+          \resumeItemListStart
+            \resumeItem{Architecting a privacy-first platform using \textbf{Next.js 15} and \textbf{TypeScript}, utilizing \textbf{Server Actions} for secure, type-safe mutations.}
+            \resumeItem{Designed a normalized relational schema in \textbf{PostgreSQL} to store encrypted journals, using \textbf{Drizzle ORM} to achieve less than 100ms query latency.}
+            \resumeItem{Integrated \textbf{Hugging Face Inference API} (RoBERTa model) to classify journal sentiment, visualizing emotional trends on a dashboard built with \textbf{Shadcn/ui}.}
+            \resumeItem{Implemented a gap-filling algorithm to interpolate missing mood data points, ensuring seamless visualization on \textbf{Chart.js} graphs.}
+          \resumeItemListEnd
+          
+    \resumeSubHeadingListEnd
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: JavaScript (ES6+), TypeScript, Python, Java, SQL, HTML/CSS} \\
+     \textbf{Frontend}{: React.js, Next.js, Redux Toolkit, TailwindCSS, Shadcn/ui} \\
+     \textbf{Backend}{: Node.js, Express.js, REST API, JWT, Socket.io} \\
+     \textbf{Databases}{: MongoDB (Mongoose), PostgreSQL (Drizzle ORM)} \\
+     \textbf{DevOps \& Tools}{: Git, Docker, Postman, Swagger, Vitest, Jest}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
