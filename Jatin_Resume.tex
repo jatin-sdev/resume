@@ -1,7 +1,7 @@
 %-------------------------
 % Resume in Latex
-% Author : Jake Gutierrez
-% Based off of: https://github.com/sb2nov/resume
+% Author : Jatin
+% Based off of: https://github.com/jatin-sdev/resume
 % License : MIT
 %------------------------
 
@@ -114,17 +114,18 @@
 \begin{center}
     \textbf{\Huge \scshape Jatin} \\ \vspace{1pt}
     \small +91-8377912277 $|$ \href{mailto:jatin.sdev@gmail.com}{\underline{jatin.sdev@gmail.com}} $|$ 
-    \href{https://linkedin.com/in/jatin-sdev}{\underline{linkedin.com/in/jatin-sdev}} $|$
-    \href{https://github.com/jatin-sdev}{\underline{github.com/jatin-sdev}}
+    \href{https://linkedin.com/in/jatin-sdev}{\underline{linkedin}} $|$
+    \href{https://github.com/jatin-sdev}{\underline{github}}  $|$
+    \href{https://jatin-portfolio-app.vercel.app/}{\underline{portfolio}}
 \end{center}
 
 
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
-    \resumeSubheading
+ \resumeSubheading
       {Dronacharya College of Engineering}{Gurugram, Haryana}
-      {Bachelor of Technology in Computer Science and IT; CGPA: 7.7}{2022 -- 2026}
+      {Bachelor of Technology in Computer Science and IT; CGPA: 7.7} {2022 -- 2026}
   \resumeSubHeadingListEnd
 
 
@@ -136,11 +137,14 @@
       {WysBryx Technologies}{Remote}
       {Full Stack Developer Intern}{Nov. 2025 -- Present}
       \resumeItemListStart
-        \resumeItem{Architected and deployed \textbf{Synergy}, an internal ERP system using \textbf{MERN Stack} and \textbf{TypeScript}, streamlining resource management for \textbf{50+ internal users}.}
-        \resumeItem{Engineered a reusable \textbf{Tiptap} rich-text editor with local state caching, reducing editor initialization latency by \textbf{30\%} and improving content creation efficiency.}
-        \resumeItem{Secured sensitive HR data by implementing \textbf{RBAC (Role-Based Access Control)} via \textbf{JWT} middleware, managing granular permissions for \textbf{4 distinct user roles}.}
-        \resumeItem{Automated weekly engineering reporting by designing scheduled cron jobs, reducing manual status update time by \textbf{40\%} for the development team.}
-        \resumeItem{Standardized API consumption by documenting \textbf{40+ RESTful endpoints} using \textbf{Swagger/Scalar}, ensuring seamless integration for frontend developers.}
+        % SYNERGY PROJECT (Compressed to 3 lines)
+        \resumeItem{Architected internal ERP \textbf{Synergy} using \textbf{MERN Stack} and \textbf{TypeScript} for 50+ users, automating weekly reporting via cron jobs to reduce manual effort by \textbf{40\%}.}
+        \resumeItem{Secured sensitive HR data via \textbf{RBAC/JWT} middleware for 4 user roles and standardized \textbf{40+ RESTful endpoints} using \textbf{Swagger} for seamless integration.}
+        \resumeItem{Engineered a reusable \textbf{Tiptap} rich-text editor with local caching, decreasing initialization latency by \textbf{30\%} to enhance content creation efficiency.}
+        
+        % GEBERIT PROJECT (Added 2 lines)
+        \resumeItem{Developed \textbf{Geberit DXF Estimator}, a serverless platform using \textbf{React}, \textbf{Hono}, and \textbf{AWS Lambda} (SST) to automate complex CAD drawing analysis and material takeoffs.}
+        \resumeItem{Designed a cost-effective single-table \textbf{DynamoDB} schema and implemented \textbf{AWS Cognito} auth, reducing infrastructure costs to \textbf{\$21/mo} while ensuring enterprise security.}
       \resumeItemListEnd
       
   \resumeSubHeadingListEnd
@@ -150,7 +154,14 @@
 \section{Projects}
     \resumeSubHeadingListStart
 
-      
+      \resumeSubheading
+        {Enterprise Orchestration Platform $|$ \textnormal{\emph{\href{https://github.com/jatin-sdev/Enterprise-Orchestration-Platform}{\underline{Repository}}}}}{}
+        {TypeScript, React, Node.js, Express, MongoDB, Zustand, Zod, Jest}{}
+          \resumeItemListStart
+            \resumeItem{Architected a secure, scalable monorepo architecture using \textbf{Node.js} and \textbf{TypeScript}, implementing granular \textbf{RBAC} via \textbf{JWT} middleware to govern multi-level user permissions.}
+            \resumeItem{Engineered a type-safe frontend ecosystem using \textbf{Zustand} for centralized state management and \textbf{Zod} for runtime validation, eliminating data inconsistency across complex modules.}
+            \resumeItem{Standardized backend reliability by integrating \textbf{Swagger} for automated API documentation and establishing robust \textbf{Jest} testing pipelines for the RESTful infrastructure.}
+          \resumeItemListEnd
 
       \resumeSubheading
         {Video Streaming Architecture $|$ \textnormal{\emph{\href{https://github.com/jatin-sdev/vidtube}{\underline{Repository}}}}}{}
@@ -168,16 +179,6 @@
             \resumeItem{Built a feature-rich shopping platform using \textbf{Redux Toolkit} for global state management of carts and user profiles, reducing unnecessary re-renders.}
             \resumeItem{Integrated \textbf{Stripe API} to process secure transactions and implemented \textbf{Nodemailer} for automated OTP verification and order notifications.}
             \resumeItem{Designed a dynamic admin dashboard for real-time inventory management, supporting complex CRUD operations for product listings.}
-          \resumeItemListEnd
-
-      \resumeSubheading
-        {MindMatters - AI Mental Health Companion $|$ \textnormal{\emph{\href{https://github.com/jatin-sdev/MindMatters}{\underline{Repository}}}}}{}
-        {Next.js 15, TypeScript, PostgreSQL, Drizzle ORM, TailwindCSS, Hugging Face API}{}
-          \resumeItemListStart
-            \resumeItem{Architecting a privacy-first platform using \textbf{Next.js 15} and \textbf{TypeScript}, utilizing \textbf{Server Actions} for secure, type-safe mutations.}
-            \resumeItem{Designed a normalized relational schema in \textbf{PostgreSQL} to store encrypted journals, using \textbf{Drizzle ORM} to achieve less than 100ms query latency.}
-            \resumeItem{Integrated \textbf{Hugging Face Inference API} (RoBERTa model) to classify journal sentiment, visualizing emotional trends on a dashboard built with \textbf{Shadcn/ui}.}
-            \resumeItem{Implemented a gap-filling algorithm to interpolate missing mood data points, ensuring seamless visualization on \textbf{Chart.js} graphs.}
           \resumeItemListEnd
           
     \resumeSubHeadingListEnd
